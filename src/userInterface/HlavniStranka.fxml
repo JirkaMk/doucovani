@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="560.0" prefWidth="900.0" style="-fx-background-color: black; -fx-background-radius: 20" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userInterface.HlavniStrankaController">
+   <children>
+      <Box />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#360202" height="560.0" layoutX="33.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
+      <ImageView fitHeight="380.0" fitWidth="372.0" layoutX="528.0" layoutY="74.0" opacity="0.31" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../zdroje/brain.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="670.0" layoutY="402.0" text="Doučování" textFill="#dddddd">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="555.0" layoutY="449.0" text="S námi se vše rychle a snadno naučíte" textFill="#dddddd">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="855.0" layoutY="14.0" onMouseClicked="#zavriOkno" text="X" textFill="#dddddd">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Button layoutX="707.0" layoutY="479.0" mnemonicParsing="false" onMouseClicked="#otevriHTML" prefHeight="30.0" prefWidth="114.0" text="Navštivte nás">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <Button layoutX="73.0" layoutY="127.0" mnemonicParsing="false" onMouseClicked="#otevriZalozZakaznika" prefHeight="30.0" prefWidth="144.0" text="Založit zákazníka">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <Button layoutX="248.0" layoutY="127.0" mnemonicParsing="false" onMouseClicked="#otevriVyhledejZakaznika" prefHeight="30.0" prefWidth="144.0" text="Vyhledat zákazníka">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <Button layoutX="73.0" layoutY="215.0" mnemonicParsing="false" onMouseClicked="#otevriZalozDite" prefHeight="30.0" prefWidth="144.0" text="Zaregistrovat dítě">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="73.0" layoutY="80.0" prefHeight="30.0" prefWidth="319.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: white;" text="Zákazníci" textFill="#d6d4d4">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="76.0" layoutY="168.0" prefHeight="30.0" prefWidth="319.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: white;" text="Děti" textFill="#d6d4d4">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="248.0" layoutY="215.0" mnemonicParsing="false" onMouseClicked="#otevriVyhledejDite" prefHeight="30.0" prefWidth="144.0" text="Vyhledat dítě">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="76.0" layoutY="258.0" prefHeight="30.0" prefWidth="319.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: white;" text="Kurzy" textFill="#d6d4d4">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="74.0" layoutY="305.0" mnemonicParsing="false" onMouseClicked="#otevriZalozKurz" prefHeight="30.0" prefWidth="144.0" text="Založit kurz">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <Button layoutX="248.0" layoutY="305.0" mnemonicParsing="false" onMouseClicked="#otevriVyhledejKurz" prefHeight="30.0" prefWidth="144.0" text="Vyhledat kurz">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="73.0" layoutY="351.0" prefHeight="30.0" prefWidth="319.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: white;" text="Vyučující" textFill="#d6d4d4">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="73.0" layoutY="396.0" mnemonicParsing="false" onMouseClicked="#otevriZalozVyucujiciho" prefHeight="30.0" prefWidth="144.0" text="Založit vyučujícího">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <Button layoutX="248.0" layoutY="396.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="144.0" text="Vyhledat vyučujícího">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="73.0" layoutY="434.0" prefHeight="30.0" prefWidth="319.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: white;" text="Objednávky" textFill="#d6d4d4">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="73.0" layoutY="479.0" mnemonicParsing="false" onMouseClicked="#otevriZalozObjednavku" prefHeight="30.0" prefWidth="144.0" text="Založit objednávku">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <Button layoutX="247.0" layoutY="479.0" mnemonicParsing="false" onMouseClicked="#otevriVyhledejObjednavku" prefHeight="30.0" prefWidth="144.0" text="Vyhledat objednávku">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <Label layoutX="833.0" layoutY="-1.0" onMouseClicked="#minimalizujOkno" prefHeight="30.0" prefWidth="13.0" text="_" textFill="#dbdbdb">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>

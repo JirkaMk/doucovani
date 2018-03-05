@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="560.0" prefWidth="900.0" style="-fx-background-color: black; -fx-background-radius: 20" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userInterface.zakaznik.ZalozZakaznikaController">
+   <children>
+      <Box />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#360202" height="560.0" layoutX="33.0" stroke="BLACK" strokeType="INSIDE" style="-fx-font-size: 14;" width="439.0" />
+      <ImageView fitHeight="380.0" fitWidth="372.0" layoutX="528.0" layoutY="74.0" opacity="0.31" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../zdroje/brain.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="670.0" layoutY="402.0" text="Doučování" textFill="#dddddd">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="555.0" layoutY="449.0" text="S námi se vše rychle a snadno naučíte" textFill="#dddddd">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="855.0" layoutY="14.0" onMouseClicked="#zavriOkno" text="X" textFill="#dddddd">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Button layoutX="707.0" layoutY="479.0" mnemonicParsing="false" onMouseClicked="#otevriHlavniStranka" prefHeight="30.0" prefWidth="114.0" text="Zrušit" />
+      <Label alignment="CENTER" layoutX="53.0" layoutY="59.0" prefHeight="30.0" prefWidth="378.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: white;" text="Založení nového zákazníka" textFill="#d6d4d4">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="833.0" layoutY="-1.0" onMouseClicked="#minimalizujOkno" prefHeight="30.0" prefWidth="13.0" text="_" textFill="#dbdbdb">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Button layoutX="574.0" layoutY="479.0" mnemonicParsing="false" onMouseClicked="#ulozZakaznika" prefHeight="30.0" prefWidth="114.0" text="Uložit" />
+      <Label layoutX="56.0" layoutY="464.0" style="-fx-font-size: 14;" text="Telefon*" textFill="#dddddd">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="509.0" text="Pole označena * jsou povinná" textFill="#dddddd" />
+      <TextField fx:id="telefon" layoutX="148.0" layoutY="462.0" opacity="0.8" prefHeight="25.0" prefWidth="284.0" style="-fx-font-size: 12;" text="+420" />
+      <Label layoutX="55.0" layoutY="413.0" style="-fx-font-size: 14;" text="Email" textFill="#dddddd">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="email" layoutX="148.0" layoutY="413.0" opacity="0.8" prefHeight="25.0" prefWidth="284.0" style="-fx-font-size: 12;" text="\@" />
+      <TextArea fx:id="adresa" layoutX="148.0" layoutY="336.0" maxHeight="57.0" opacity="0.8" prefHeight="57.0" prefWidth="284.0" style="-fx-font-size: 12;" />
+      <Label layoutX="55.0" layoutY="352.0" style="-fx-font-size: 14;" text="Adresa*" textFill="#dddddd">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="stat" layoutX="148.0" layoutY="291.0" opacity="0.8" prefHeight="25.0" prefWidth="284.0" style="-fx-font-size: 12;" />
+      <TextField fx:id="rodneCislo" layoutX="148.0" layoutY="245.0" opacity="0.8" prefHeight="25.0" prefWidth="284.0" style="-fx-font-size: 12;" />
+      <TextField fx:id="prijmeni" layoutX="148.0" layoutY="202.0" opacity="0.8" prefHeight="25.0" prefWidth="284.0" style="-fx-font-size: 12;" />
+      <TextField fx:id="jmeno" layoutX="148.0" layoutY="157.0" opacity="0.8" prefHeight="25.0" prefWidth="284.0" style="-fx-font-size: 12;" />
+      <TextField fx:id="titul" layoutX="148.0" layoutY="117.0" opacity="0.8" prefHeight="25.0" prefWidth="105.0" style="-fx-font-size: 12;" />
+      <Label layoutX="53.0" layoutY="117.0" style="-fx-font-size: 14;" text="Titul" textFill="#dddddd">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="157.0" style="-fx-font-size: 14;" text="Jméno*" textFill="#dddddd">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="202.0" style="-fx-font-size: 14;" text="Příjmení*" textFill="#dddddd">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="245.0" style="-fx-font-size: 14;" text="Rodné číslo*" textFill="#dddddd">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="294.0" style="-fx-font-size: 14;" text="Stát*" textFill="#dddddd">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+            <AnchorPane fx:id="alertDatabazeNOK" layoutX="343.0" layoutY="212.0" prefHeight="97.0" prefWidth="253.0" style="-fx-background-color: #ED4425; -fx-background-radius: 20; -fx-border-color: #dddddd; -fx-border-radius: 20;">
+         <children>
+            <Label layoutX="25.0" layoutY="14.0" text="!" textFill="#dddddd">
+               <font>
+                  <Font name="System Bold" size="43.0" />
+               </font>
+            </Label>
+            <Label layoutX="53.0" layoutY="18.0" prefHeight="57.0" prefWidth="186.0" style="-fx-font-size: 18;" text="Záznam se nepodařilo &#10;uložit." textAlignment="CENTER" textFill="#dddddd">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="alertValidaceNOK" layoutX="343.0" layoutY="212.0" prefHeight="97.0" prefWidth="253.0" style="-fx-background-color: #ED4425; -fx-background-radius: 20; -fx-border-color: #dddddd; -fx-border-radius: 20;">
+         <children>
+            <Label layoutX="25.0" layoutY="14.0" text="!" textFill="#dddddd">
+               <font>
+                  <Font name="System Bold" size="43.0" />
+               </font>
+            </Label>
+            <Label layoutX="67.0" layoutY="18.0" prefHeight="57.0" prefWidth="186.0" style="-fx-font-size: 18;" text="Zadal si nevalidní &#10;údaje." textAlignment="CENTER" textFill="#dddddd">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane> 
+      <AnchorPane fx:id="alertDatabazeOK" layoutX="343.0" layoutY="212.0" prefHeight="97.0" prefWidth="255.0" style="-fx-background-color: #ED4425; -fx-background-radius: 20; -fx-border-color: #dddddd; -fx-border-radius: 20;">
+         <children>
+            <Label layoutX="77.0" layoutY="20.0" prefHeight="57.0" prefWidth="171.0" style="-fx-font-size: 18;" text="Záznam byl úspěšně &#10;uložen." textAlignment="CENTER" textFill="#dddddd">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Circle fill="#ed4425" layoutX="38.0" layoutY="47.0" radius="24.0" stroke="#dddddd" strokeType="INSIDE" strokeWidth="2.0" />
+            <Label layoutX="35.0" layoutY="23.0" prefHeight="48.0" prefWidth="2.0" style="-fx-font-size: 28;" text="i" textAlignment="CENTER" textFill="#dddddd">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>        
+   </children>
+</AnchorPane>
